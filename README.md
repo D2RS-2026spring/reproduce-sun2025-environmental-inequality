@@ -75,14 +75,14 @@ install.packages(c(
 
 ## 💻 系统与环境要求
 
-在复现本项目的所有结果前，确保电脑已安装以下软件：
+在复现本项目的所有结果前，需要确保电脑已安装以下软件：
 
 1.  **R软件** (版本 4.0 或更高)
     - 下载地址：https://cran.r-project.org/
 2.  **RStudio IDE** (推荐，版本 2022.02 或更高)
     - 下载地址：https://posit.co/download/rstudio-desktop/
 
-安装完以上软件后，请打开RStudio，继续按照下面的步骤安装R包并运行分析。
+安装完以上软件后，打开RStudio，按照下面的步骤安装R包并运行分析。
 
 ### 步骤一：获取项目文件
 
