@@ -159,6 +159,7 @@ reproduce-sun2025-environmental-inequality/
 可视化分析   环境不平等趋势图             ✅ 已生成
 
 ## ⚠️ 常见问题与解决方案
+
                问题                                               解决方案
 
 `read_dta()` 报错“无法找到文件”         ：            确保工作目录设置为项目文件夹，或使用 `setwd()` 设置路径
