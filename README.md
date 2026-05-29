@@ -47,12 +47,19 @@
 
 在R控制台中运行以下命令安装所需包：
 一次性安装所有依赖包
+
 install.packages(c(
+
   "haven",        # 读取Stata数据文件（.dta）
+  
   "dplyr",        # 数据处理（mutate, group_by, summarise）
+  
   "ggplot2",      # 数据可视化
+  
   "fixest",       # 高维固定效应回归
+  
   "tidyr",        # 数据整理
+  
   "modelsummary"  # 输出回归表格（可选）
 ))
 
@@ -61,7 +68,9 @@ install.packages(c(
 ### 步骤一：获取项目文件
 
 **方式1：Git克隆（推荐）**
-git clone https://github.com/D2RS-2026spring/reproduce-sun2025-environmental-inequality.git
+git clone 
+
+https://github.com/D2RS-2026spring/reproduce-sun2025-environmental-inequality.git
 
 **方式2：下载ZIP压缩包**
 1.  访问 GitHub项目地址
@@ -85,28 +94,41 @@ git clone https://github.com/D2RS-2026spring/reproduce-sun2025-environmental-ine
 ## 📁 项目文件结构
 
 reproduce-sun2025-environmental-inequality/
+
 │
+
 ├── README.md                    # 项目说明文档（本文件）
+
 ├── 报告.qmd                     # Quarto源文件（可执行报告）
+
 ├── 报告.html                    # 生成的HTML报告
+
 │
+
 ├── 数据_Metro.dta               # 都市圈层面原始数据（33个都市圈×18年）
+
 ├── 数据_City.dta                # 地级市层面原始数据（143个城市×18年）
+
 ├── 数据_Firm.dta                # 企业层面原始数据（2105家企业×18年）
+
 │
+
 ├── 程序.do                      # 原文提供的Stata代码
+
 ├── 附录.pdf                     # 论文附录
+
 └── 《中国工业经济》编辑部关于公开数据附件的使用说明.pdf
 
+
 ## 📈 复现内容说明
-章节   内容   复现状态
+章节                   内容                复现状态
 表1 (1)(3)列   基准回归（不加控制变量）   ✅ 完全复现
 表1 (2)(4)列   基准回归（加入控制变量）   ✅ 基本复现
 描述性统计   核心变量统计特征   ✅ 已生成
 可视化分析   环境不平等趋势图   ✅ 已生成
 
 ## ⚠️ 常见问题与解决方案
-问题   解决方案
+问题                                                 解决方案
 `read_dta()` 报错“无法找到文件”   确保工作目录设置为项目文件夹，或使用 `setwd()` 设置路径
 `%>%` 管道符报错   运行 `library(dplyr)` 加载包
 `feols()` 报错“找不到变量”   检查数据中是否存在 `id` 和 `year` 变量
@@ -128,7 +150,7 @@ EI_I（加控制变量）   -0.0339   -0.0314   0.0025
 
 ## ✅ 可重复性评估
 
-维度   评分   说明
+维度             评分               说明
 
 数据可用性   ⭐⭐⭐⭐⭐   作者完整公开了所有数据
 
