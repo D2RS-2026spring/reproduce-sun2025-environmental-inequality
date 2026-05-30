@@ -156,7 +156,6 @@ reproduce-sun2025-environmental-inequality/
 
 描述性统计   核心变量统计特征             ✅ 已生成
 
-可视化分析   环境不平等趋势图             ✅ 已生成
 
 ## ⚠️ 常见问题与解决方案
 
